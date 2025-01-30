@@ -1,6 +1,5 @@
 <script setup>
 import { onMounted, ref, watchEffect, nextTick } from "vue";
-import Plotly from "plotly.js-dist";
 
 const props = defineProps({
   funktion: Array, // Liste von Funktionen ["y=x**2", "y=Math.sin(x)", ...]
@@ -13,6 +12,22 @@ const props = defineProps({
 
 const graphRef = ref(null);
 const theme = ref("light");
+let Plotly = null; // Wird erst im Browser geladen
+
+// Sicherstellen, dass Plotly erst nach dem Mounting im Browser geladen wird
+onMounted(async () => {
+  if (typeof window !== "undefined") {
+    Plotly = await import("plotly.js-dist");
+    updateTheme();
+    
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
+    renderPlot();
+
+    return () => observer.disconnect(); // Cleanup bei Zerstörung der Komponente
+  }
+});
 
 // Funktion zur sicheren Berechnung von y-Werten
 const berechneY = (x, gleichung) => {
@@ -25,27 +40,15 @@ const berechneY = (x, gleichung) => {
   }
 };
 
-
 // Funktion zur Ermittlung des aktuellen Themes
 const updateTheme = () => {
   theme.value = document.documentElement.classList.contains("dark") ? "dark" : "light";
   renderPlot(); // Graph direkt neu zeichnen
 };
 
-// Dark-/Light-Mode beobachten und sofort aktualisieren
-onMounted(() => {
-  updateTheme();
-  const observer = new MutationObserver(updateTheme);
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-
-  renderPlot();
-
-  return () => observer.disconnect(); // Cleanup bei Zerstörung der Komponente
-});
-
 const renderPlot = async () => {
-  if (!props.funktion || props.funktion.length === 0) {
-    console.error("Keine Funktionsgleichungen übergeben!");
+  if (!Plotly || !props.funktion || props.funktion.length === 0) {
+    console.error("Plotly nicht geladen oder keine Funktionsgleichungen übergeben!");
     return;
   }
 
@@ -94,5 +97,7 @@ const renderPlot = async () => {
 </script>
 
 <template>
+  <ClientOnly>
     <div ref="graphRef" style="width: 100%; height: 400px;"></div>
-  </template>
+  </ClientOnly>
+</template>
