@@ -83,7 +83,7 @@ funktion=y=2*x^2
 xmin=-10
 xmax=10
 ymin=-10
-ymax=10
+ymax=50
 :::
 
 :::graph
