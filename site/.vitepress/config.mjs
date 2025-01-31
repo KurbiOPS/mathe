@@ -5,6 +5,7 @@ import markdownItGraph  from './plugins/markdown-it-graph'
 export default defineConfig({
   title: "Mathe",
   description: "Eine Seite um Mathe zu lernen",
+  lastUpdated: true,
   base: "/mathe/",
   markdown: {
     math: true,
@@ -23,7 +24,8 @@ export default defineConfig({
       {
         text: 'Mathe',
         items: [
-          { text: 'Parabeln', link: '/parabeln' }
+          { text: 'Parabeln', link: '/parabeln' },
+          { text: 'Binomische Formeln', link: '/binomischeformeln' }
         ]
       }
     ],
