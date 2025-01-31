@@ -1,8 +1,6 @@
 # Die quadratische Funktion (Parabeln)
 
-## Parabeln im Überblick
-
-Eine quadratische Funktion hat die allgemeine Form:
+## Parabelnformeln im Überblick:
 
 - **Normalparabel:** $y = x^2$
 - **Gestreckte oder gestauchte Parabel:** $y = ax^2$
