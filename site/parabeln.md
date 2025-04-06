@@ -14,8 +14,7 @@ Die Normalparabel ist der „Standard“ aller Parabeln.
 
 ### Erkennung ohne Messung
 Anhand der unten eingezeichneten Punkte kann man erkennen, ob es sich um eine Normalparabel handelt. 
-- Diese 2 punkte sind vom Scheitelpunkt:
-  - 1 nach oben und 1 zur Seite 
+
 
 :::graph
 funktion=y=x^2
@@ -24,6 +23,24 @@ xmax=10
 ymin=-5
 ymax=10
 :::
+
+
+- hier bei gibt es einen Punkt dieser ist wenn ihr fom Scheitelpunkt aus 1 nach oben und 1 nach rechts oder nach links geht. 
+  - Sobald ihr 1 nach oben und eins zur Seite  gegangen seit und danach auf der Parabel seit, wisst ihr das es eine Normalparabel ist.
+    - sprich $a = 1$
+- Natürlich geht das auch wenn ihr zuerst 1 zur Seite und danach 1 nach oben geht 
+
+Im unten gezeigten Koordinatensystem kann man es sehr gut sehen weas ich meine:
+
+
+:::graph
+funktion=y=x^2
+xmin=-2
+xmax=2
+ymin=-0
+ymax=2
+:::
+
 
 ### Die Normalparabel kann auch nach unten geöffnet sein.
 
@@ -37,18 +54,31 @@ ymin=-10
 ymax=5
 :::
 
-Die Punkte für die Erkennung sind hier.
-- 1 nach unten und 1 zur Seite
+- Bei einer nach unten geöffnete Parabel muss man für die Erkennung nicht um 1 nach oben, sondern nach unten: 
+  - was ich damit sagen möchte ist das man zur erkennung hier um 1 nach unten und 1 zur Seite muss.
+- Hierbei ist es auch weider egal in welche Richtung man zuerst geht.
+
+Hier kann man es auch wieder im unten dargestellten Koordinatensystem sehen:
+
+:::graph
+funktion=y=-1*x^2
+xmin=-3
+xmax=3
+ymin=-2
+ymax=1
+:::
+
 
 ## Gestreckte und gestauchte Parabel $y = ax^2$
 
 ### Gestreckte Parabel
-Gestreckte Parabeln sind „enger“ als die Normalparabel. Sie verlaufen innerhalb der Punkte der Normalparabel.
-
+Gestreckte Parabeln sind „enger“ als die Normalparabel
+- sie verlaufen innerhalb der oben genannten Punkte 
 
 
 ### Gestauchte Parabel
-Gestauchte Parabeln sind „breiter“ als die Normalparabel. Sie verlaufen außerhalb der Punkte der Normalparabel.
+Gestauchte Parabeln sind „breiter“ als die Normalparabel
+- Sie verläuft anders als die gestreckte Parabel außerhalb der oben genannten Punkte 
 
 
 
@@ -56,16 +86,17 @@ Gestauchte Parabeln sind „breiter“ als die Normalparabel. Sie verlaufen auß
 Die allgemeine Formel ist:
 $y = ax^2$
 
-Die Normalparabel ist ein Spezialfall mit $a = 1$. Das bedeutet:
+
 
 - **Normalparabel:** $a = 1$
 - **Gestreckte Parabel:** $a > 1$ oder $a < -1$
 - **Gestauchte Parabel:** $0 < a < 1$ oder $-1 < a < 0$
-- **Nach unten geöffnete Parabel:** wenn vor $a$ ein $-$ steht, ist die Parabel nach unten geöffnet
+- **Nach unten geöffnete Parabel:** wenn vor $a$ ein $-$ steht, ist die Parabel nach unten geöffnet (das gilt für alle Parabeln)
 
-Da $a$ bei der Normalparabel $1$ ist, wird es in der Formel oft weggelassen.
+Da $a$ bei der Normalparabel $1$ ist, wird es in der Formel oft weggelassen. 
+- Da sich eine Zahl nicht ändert wenn sie mit $1$ multipliziert wird.
 
-In diesem Bild könnt ihr die **vier Fälle** sehen 
+In diesem Bild könnt ihr die **verschiedenen Fälle** sehen 
 
 :::graph
 funktion=y=x^2
@@ -77,6 +108,7 @@ xmax=10
 ymin=-20
 ymax=50
 :::
+
 
 ## Parabel auf der y-Achse verschoben $y = ax^2 + c$
 
@@ -100,7 +132,7 @@ ymax=10
 :::
 
 
-## Parabel auf der x-Achse verschoben $y = (x - d)^2$
+## Parabel auf der x-Achse verschoben $y = a(x - d)^2$
 
 Zusätzlich zu $a$ und $c$ gibt es noch die Variable $d$, die die **Verschiebung auf der x-Achse** angibt.
 
@@ -131,8 +163,33 @@ ymin=-10
 ymax=50
 :::
 
+Hier bei kann die Parabel auch wieder gestreckt oder gestaucht sein
 
-## Parabel auf der x- und auf der y-Achse verschoben $y=(x-d)^2+e$
+
+:::graph
+funktion=y=2*(x-3)^2
+funktion=y=0,5*(x+3)^2
+xmin=-10
+xmax=10
+ymin=-10
+ymax=50
+:::
+
+
+genauso wie sie auch nach unten geöffnet sein kann
+
+
+:::graph
+funktion=y=-2*(x-3)^2
+funktion=y=-1*(x+3)^2
+xmin=-10
+xmax=10
+ymin=-50
+ymax=10
+:::
+
+
+## Parabel auf der x- und auf der y-Achse verschoben $y=a(x-d)^2+e$
 
 Ihr wisst nun fast alle Fälle der Verschobenen Parabeln, nun kommt die letzte in der von allen etwas dabei ist.
 **Wichtig:**
@@ -187,3 +244,32 @@ ymin=-50
 ymax=10
 :::
 
+Natürlich können diese Parabeln auch noch gestreckt oder gestaucht sein 
+
+
+:::graph
+funktion=y=2*(x-3)^2+2
+funktion=y=2*(x+3)^2+2
+funktion=y=-2*(x-3)^2+2
+funktion=y=-2*(x+3)^2+2
+funktion=y=2*(x-3)^2-2
+funktion=y=2*(x+3)^2-2
+funktion=y=-2*(x-3)^2-2
+funktion=y=-2*(x+3)^2-2
+xmin=-10
+xmax=10
+ymin=-10
+ymax=50
+:::
+
+
+
+:::graph 
+funktion=y=Math.sin(x)
+funktion=y=Math.cos(x)
+funktion=y=Math.tan(x)
+xmin=-5
+xmax=5
+ymin=-5
+ymax=5
+:::
