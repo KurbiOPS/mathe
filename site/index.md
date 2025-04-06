@@ -8,11 +8,11 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Parabeln
-      link: /parabeln
+      text: Parabeln und Geraden
+      link: /Funktionen
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Binomischeformeln
+      link: /binomischeformeln
 
 features:
   - title: Feature A

@@ -17,14 +17,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Parabeln', link: '/parabeln' }
+      { text: 'Parabeln und Gerade', link: '/funktionen' }
     ],
 
     sidebar: [
       {
         text: 'Mathe',
         items: [
-          { text: 'Parabeln', link: '/parabeln' },
+          { text: 'Parabeln und Geraden', link: '/funktionen' },
           { text: 'Binomische Formeln', link: '/binomischeformeln' }
         ]
       }
