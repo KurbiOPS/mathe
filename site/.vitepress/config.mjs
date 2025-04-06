@@ -17,7 +17,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Parabeln und Gerade', link: '/funktionen' }
+      { text: 'Parabeln und Gerade', link: '/Funktionen' }
     ],
 
     sidebar: [
