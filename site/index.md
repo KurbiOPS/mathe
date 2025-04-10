@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Parabeln und Geraden
-      link: /Funktionen
+      link: /funktionen
     - theme: alt
       text: Binomischeformeln
       link: /binomischeformeln
