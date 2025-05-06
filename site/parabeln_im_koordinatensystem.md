@@ -1,4 +1,4 @@
-# Die quadratische Funktion (Parabeln)
+# Die quadratische Funktion (Parabeln) im Koordinatensystem
 
 ## Parabelnformeln im Überblick:
 
